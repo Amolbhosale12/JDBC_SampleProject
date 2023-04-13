@@ -24,7 +24,7 @@ public class JDBC_SampleProject  {
 		com.mysql.cj.jdbc.Driver d=new com.mysql.cj.jdbc.Driver();// here we create object of Driver class.
 		DriverManager.registerDriver(d);
 		//System.out.println("Load class successfully......");
-		Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/empInformation","root","amb123");
+		Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/empInformation","root","amb123");// here we need to write username and password of database
 		if(c!=null) {
 			//System.out.println("connected....");
 			Statement s=c.createStatement();
